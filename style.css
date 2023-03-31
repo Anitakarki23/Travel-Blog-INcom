@@ -104,5 +104,142 @@ ul.menu {
   padding:5px;
 }
 
+/* ======= aside */
+
+.side-links {
+  width: 30%;
+  /* background: purple; */
+}
+
+.country {
+  background: rgb(197, 235, 144);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
+.year {
+  background: rgba(250, 250, 115, 0.58);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* ===== recc section */
+.recc {
+  background: rgba(172, 255, 47, 0.569);
+  padding: 4rem 0;
+}
+
+.card-list {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: -5px 10px 10px 5px rgba(0, 0, 0, 0.3);
+  padding-bottom: 1rem;
+  /* flex-grow: 1; */
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px 0;
+
+  box-shadow: -5px 10px 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* ==== subscription */
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+form button {
+  padding: 0.3rem 1rem;
+}
+
+/* ======footer */
+.footer {
+  min-height: 100px;
+  background: #000;
+  color: white;
+  padding: 3rem;
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media query */
+
+/* larger screen: 1200px */
+/* medium: 768px to 1200px */
+/* small screen: <768px */
+
+/* pads */
+@media (max-width: 1000px) {
+ .main {
+  display: flex;
+  flex-direction: column;
+ }
+
+.main-content {
+  width: 100%;
+}
+.side-links {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.country {
+  margin-bottom: 0;
+}
+.country, .year{
+  width: 50%;
+}
+}
+
+/* mobiles */
+@media (max-width: 768px) {
+  .glb-msg {
+    display: none;
+  }
+.side-links{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:2rem;
 
 
+}
+.country,.year {
+  width: 100%;
+  
+}
+.card{
+  width:100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+/* pads */
+
+}
